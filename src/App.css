@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  padding: 20px 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 520px) {
+  .header {
+    display: block;
+  }
+
+  .header button {
+    margin-bottom: 1rem;
+  }
+}
+
+.header .content {
+  flex-grow: 1;
+}
+
+.header button {
+  padding: 8px 24px;
+  -webkit-box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.46);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.header button:active {
+  box-shadow: none;
+  border-color: blueviolet;
+  transition: all 0.2s ease-in;
+}
+
+.header button:hover {
+  box-shadow: none;
+  transition: all 0.2s ease-in;
+}
+
+.DraftEditor-root {
+  border: 3px solid #eee;
+}
+
+.public-DraftEditor-content {
+  min-height: 500px;
+  overflow: auto;
+}
